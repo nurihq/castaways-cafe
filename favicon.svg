@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 20" fill="none" stroke="#FFD700" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!--
+    Center hub: cx=16, cy=18, r=3
+    Outer rim radius: 12  →  rim circle center also at (16,18)
+    Rim arc: top half only, from (4,18) to (28,18)
+
+    Spoke directions (unit vectors from center):
+      12 o'clock:  (0, -1)         → rim at (16, 6),  nub at (16, 2)
+      10 o'clock:  (-sin60, -cos60) = (-0.866, -0.5)
+                   → rim at (16-10.4, 18-6) = (5.6, 12) … wait let me use exact trig
+                   10 o'clock = 300° from positive x (or 120° from top)
+                   angle from top = -120° → x = 16 + 12*sin(-120°) = 16 - 10.39 = 5.61
+                                            y = 18 - 12*cos(120°)  = 18 - 12*0.5 = 18-6 = 12
+                   nub (r=15.5):  x = 16 + 15.5*sin(-120°) = 16 - 13.43 = 2.57 ≈ 2.6
+                                  y = 18 - 15.5*0.5 = 18 - 7.75 = 10.25 ≈ 10.3
+      2  o'clock:  mirror of 10 o'clock
+                   rim at (26.4, 12), nub at (29.4, 10.3)
+  -->
+
+  <!-- Outer rim: top-half arc -->
+  <path d="M 4 18 A 12 12 0 0 1 28 18" />
+
+  <!-- Center hub -->
+  <circle cx="16" cy="18" r="3" />
+
+  <!-- 12 o'clock spoke: from hub edge (16,15) through rim (16,6) to nub base (16,3.5) -->
+  <line x1="16" y1="15" x2="16" y2="3.5" />
+  <!-- 10 o'clock spoke: from hub edge through rim to nub base -->
+  <line x1="13.4" y1="15.5" x2="3.8" y2="10.8" />
+  <!-- 2 o'clock spoke: mirror -->
+  <line x1="18.6" y1="15.5" x2="28.2" y2="10.8" />
+
+  <!-- Handle nubs — clearly OUTSIDE the rim -->
+  <!-- 12 o'clock nub: above the rim point at (16,6), sitting at y=2 -->
+  <circle cx="16" cy="2" r="1.8" fill="#FFD700" stroke="none"/>
+  <!-- 10 o'clock nub: beyond rim point at (5.6,12), sitting further out -->
+  <circle cx="2.2" cy="9.5" r="1.8" fill="#FFD700" stroke="none"/>
+  <!-- 2 o'clock nub: mirror -->
+  <circle cx="29.8" cy="9.5" r="1.8" fill="#FFD700" stroke="none"/>
+</svg>
