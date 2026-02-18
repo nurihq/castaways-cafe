@@ -17,7 +17,7 @@ const Navbar = () => {
                         <a href="#" className="text-charcoal hover:text-ocean transition-colors">Home</a>
                         <a href="#menu" className="text-charcoal hover:text-ocean transition-colors">Menu</a>
                         <a href="#about" className="text-charcoal hover:text-ocean transition-colors">About</a>
-                        <a href="#contact" className="bg-slate-blue text-white px-6 py-2.5 rounded-full hover:bg-ocean transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <a href="#about" className="bg-slate-blue text-white px-6 py-2.5 rounded-full hover:bg-ocean transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             Call Us
                         </a>
                     </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
                         <a href="#" className="block px-3 py-3 text-charcoal hover:text-ocean hover:bg-sand rounded-lg transition-colors" onClick={() => setIsOpen(false)}>Home</a>
                         <a href="#menu" className="block px-3 py-3 text-charcoal hover:text-ocean hover:bg-sand rounded-lg transition-colors" onClick={() => setIsOpen(false)}>Menu</a>
                         <a href="#about" className="block px-3 py-3 text-charcoal hover:text-ocean hover:bg-sand rounded-lg transition-colors" onClick={() => setIsOpen(false)}>About</a>
-                        <a href="#contact" className="block px-3 py-3 bg-slate-blue text-white rounded-lg font-bold mx-2 mt-4 hover:bg-ocean transition-colors" onClick={() => setIsOpen(false)}>Call Us</a>
+                        <a href="#about" className="block px-3 py-3 bg-slate-blue text-white rounded-lg font-bold mx-2 mt-4 hover:bg-ocean transition-colors" onClick={() => setIsOpen(false)}>Call Us</a>
                     </div>
                 </div>
             )}

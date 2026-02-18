@@ -27,7 +27,7 @@ const Hero = () => {
                         <a href="#menu" className="px-8 py-4 bg-white text-charcoal font-bold text-lg rounded-full hover:bg-slate-100 transition-all shadow-xl hover:scale-105">
                             View Menu
                         </a>
-                        <a href="#contact" className="px-8 py-4 bg-slate-blue/90 backdrop-blur-sm text-white font-bold text-lg rounded-full hover:bg-ocean transition-all shadow-xl hover:scale-105">
+                        <a href="#about" className="px-8 py-4 bg-slate-blue/90 backdrop-blur-sm text-white font-bold text-lg rounded-full hover:bg-ocean transition-all shadow-xl hover:scale-105">
                             Find Us
                         </a>
                     </div>
