@@ -34,7 +34,7 @@ const MenuGrid = () => {
         {
             title: "Breakfast Burrito",
             description: "Loaded breakfast burrito to fuel your day on the water.",
-            image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=2000&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=2000&auto=format&fit=crop"
         }
     ];
 
