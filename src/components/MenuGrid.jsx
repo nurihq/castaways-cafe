@@ -1,9 +1,14 @@
 import React from 'react';
 
-const MenuItem = ({ title, description, image }) => (
+const MenuItem = ({ title, description, image, badge }) => (
     <div className="group bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
         <div className="h-56 overflow-hidden relative">
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-10" />
+            {badge && (
+                <div className="absolute top-3 left-3 z-20 bg-ocean text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-md">
+                    {badge}
+                </div>
+            )}
             {image && <img src={image} alt={title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />}
         </div>
         <div className="p-6">
@@ -14,12 +19,12 @@ const MenuItem = ({ title, description, image }) => (
 );
 
 const MenuGrid = () => {
-    // Reliable Unsplash images
     const items = [
         {
-            title: "Breakfast Sandwich",
-            description: "Hearty breakfast sandwich on a roll, perfect for a morning start.",
-            image: "https://images.unsplash.com/photo-1525351484163-7529414395d8?q=80&w=2000&auto=format&fit=crop"
+            title: "Eggs Benedict",
+            description: "Poached eggs on a toasted English muffin with Canadian bacon and silky hollandaise sauce.",
+            image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=2000&auto=format&fit=crop",
+            badge: "Fan Favorite"
         },
         {
             title: "Bacon Cheeseburger",
@@ -35,6 +40,12 @@ const MenuGrid = () => {
             title: "Breakfast Burrito",
             description: "Loaded breakfast burrito to fuel your day on the water.",
             image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=2000&auto=format&fit=crop"
+        },
+        {
+            title: "Crab Cake Platter",
+            description: "Fresh lump crab cakes, pan-seared golden brown, served with remoulade and a side salad.",
+            image: "https://images.unsplash.com/photo-1559742811-822873691df8?q=80&w=2000&auto=format&fit=crop",
+            badge: "Chef's Special"
         }
     ];
 
@@ -47,7 +58,7 @@ const MenuGrid = () => {
                     Whatever you're craving, we've got something to hit the spot. "Skip the Diet" and dive in!
                 </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                 {items.map((item, index) => (
                     <MenuItem key={index} {...item} />
                 ))}

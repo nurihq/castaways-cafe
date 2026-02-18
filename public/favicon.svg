@@ -1,12 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Top half of outer ring: arc from left to right across the top -->
+  <path d="M 2 12 A 10 10 0 0 1 22 12" />
+  <!-- Center hub -->
   <circle cx="12" cy="12" r="3" />
-  <path d="M12 2v3" />
-  <path d="M12 19v3" />
-  <path d="M2 12h3" />
-  <path d="M19 12h3" />
-  <path d="m4.9 4.9 2.1 2.1" />
-  <path d="M17 17l2.1 2.1" />
-  <path d="m19.1 4.9-2.1 2.1" />
-  <path d="M4.9 19.1 7 17" />
+  <!-- Top spoke (12 o'clock) -->
+  <path d="M12 2v7" />
+  <!-- Upper-left spoke (~10 o'clock) -->
+  <path d="M4.9 4.9l2.1 2.1" />
+  <!-- Upper-right spoke (~2 o'clock) -->
+  <path d="M19.1 4.9l-2.1 2.1" />
+  <!-- Left spoke handle nub -->
+  <circle cx="2" cy="12" r="1.2" fill="#FFD700" stroke="none"/>
+  <!-- Right spoke handle nub -->
+  <circle cx="22" cy="12" r="1.2" fill="#FFD700" stroke="none"/>
+  <!-- Top spoke handle nub -->
+  <circle cx="12" cy="2" r="1.2" fill="#FFD700" stroke="none"/>
 </svg>
