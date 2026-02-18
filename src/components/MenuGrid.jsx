@@ -37,9 +37,10 @@ const MenuGrid = () => {
             image: "https://images.unsplash.com/photo-1510693206972-df098062cb71?q=80&w=2000&auto=format&fit=crop"
         },
         {
-            title: "Breakfast Burrito",
-            description: "Loaded breakfast burrito to fuel your day on the water.",
-            image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=2000&auto=format&fit=crop"
+            title: "Pancake Stack",
+            description: "Fluffy American pancakes piled high with fresh berries, whipped cream, and warm maple syrup.",
+            image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=2000&auto=format&fit=crop",
+            badge: "Sweet Treat"
         },
         {
             title: "Crab Cake Platter",

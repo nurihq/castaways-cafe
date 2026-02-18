@@ -1,18 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Top half of outer ring: arc from left to right across the top -->
-  <path d="M 2 12 A 10 10 0 0 1 22 12" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 16" fill="none" stroke="#FFD700" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Top half of outer rim arc -->
+  <path d="M 2 14 A 12 12 0 0 1 26 14" />
   <!-- Center hub -->
-  <circle cx="12" cy="12" r="3" />
-  <!-- Top spoke (12 o'clock) -->
-  <path d="M12 2v7" />
-  <!-- Upper-left spoke (~10 o'clock) -->
-  <path d="M4.9 4.9l2.1 2.1" />
-  <!-- Upper-right spoke (~2 o'clock) -->
-  <path d="M19.1 4.9l-2.1 2.1" />
-  <!-- Left spoke handle nub -->
-  <circle cx="2" cy="12" r="1.2" fill="#FFD700" stroke="none"/>
-  <!-- Right spoke handle nub -->
-  <circle cx="22" cy="12" r="1.2" fill="#FFD700" stroke="none"/>
-  <!-- Top spoke handle nub -->
-  <circle cx="12" cy="2" r="1.2" fill="#FFD700" stroke="none"/>
+  <circle cx="14" cy="14" r="3" />
+  <!-- Top spoke: hub to rim top (12 o'clock) -->
+  <line x1="14" y1="11" x2="14" y2="3" />
+  <!-- Upper-left spoke: hub to rim (~10 o'clock) -->
+  <line x1="11.4" y1="11.6" x2="5.2" y2="5.4" />
+  <!-- Upper-right spoke: hub to rim (~2 o'clock) -->
+  <line x1="16.6" y1="11.6" x2="22.8" y2="5.4" />
+  <!-- Handle nubs: OUTSIDE the rim, extending outward from each spoke tip -->
+  <!-- Top handle: above the 12 o'clock rim point -->
+  <circle cx="14" cy="1.5" r="1.5" fill="#FFD700" stroke="none"/>
+  <!-- Upper-left handle: beyond the 10 o'clock rim point -->
+  <circle cx="3.8" cy="4.0" r="1.5" fill="#FFD700" stroke="none"/>
+  <!-- Upper-right handle: beyond the 2 o'clock rim point -->
+  <circle cx="24.2" cy="4.0" r="1.5" fill="#FFD700" stroke="none"/>
 </svg>
