@@ -19,33 +19,34 @@ const MenuItem = ({ title, description, image, badge }) => (
 );
 
 const MenuGrid = () => {
+    const base = import.meta.env.BASE_URL;
     const items = [
         {
             title: "Glazed Pancakes",
             description: "Golden pancakes drizzled with sweet glaze — a morning classic done right.",
-            image: "/food/pancakes-glaze.jpg",
+            image: `${base}food/pancakes-glaze.jpg`,
             badge: "Fan Favorite"
         },
         {
             title: "Breakfast Sliders",
             description: "Bite-sized breakfast sandwiches served with crispy home fries.",
-            image: "/food/breakfast-sliders.jpg"
+            image: `${base}food/breakfast-sliders.jpg`
         },
         {
             title: "French Toast",
             description: "Thick-cut French toast loaded with chocolate chips and powdered sugar.",
-            image: "/food/french-toast.jpg",
+            image: `${base}food/french-toast.jpg`,
             badge: "Sweet Treat"
         },
         {
             title: "Breakfast Wrap",
             description: "A hearty wrap packed with eggs, cheese and your choice of fillings.",
-            image: "/food/breakfast-wrap.jpg"
+            image: `${base}food/breakfast-wrap.jpg`
         },
         {
             title: "Full Breakfast Platter",
             description: "Eggs your way, crispy bacon, toast and home fries — the works.",
-            image: "/food/full-breakfast.jpg",
+            image: `${base}food/full-breakfast.jpg`,
             badge: "Chef's Special"
         }
     ];
