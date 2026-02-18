@@ -21,31 +21,31 @@ const MenuItem = ({ title, description, image, badge }) => (
 const MenuGrid = () => {
     const items = [
         {
-            title: "Eggs Benedict",
-            description: "Poached eggs on a toasted English muffin with Canadian bacon and silky hollandaise sauce.",
-            image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=2000&auto=format&fit=crop",
+            title: "Glazed Pancakes",
+            description: "Golden pancakes drizzled with sweet glaze — a morning classic done right.",
+            image: "/food/pancakes-glaze.jpg",
             badge: "Fan Favorite"
         },
         {
-            title: "Bacon Cheeseburger",
-            description: "Juicy burger topped with crispy bacon and melted cheese, served with fries.",
-            image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=2000&auto=format&fit=crop"
+            title: "Breakfast Sliders",
+            description: "Bite-sized breakfast sandwiches served with crispy home fries.",
+            image: "/food/breakfast-sliders.jpg"
         },
         {
-            title: "Classic Omelet",
-            description: "Fluffy omelet served with our signature home fries.",
-            image: "https://images.unsplash.com/photo-1510693206972-df098062cb71?q=80&w=2000&auto=format&fit=crop"
-        },
-        {
-            title: "Pancake Stack",
-            description: "Fluffy American pancakes piled high with fresh berries, whipped cream, and warm maple syrup.",
-            image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=2000&auto=format&fit=crop",
+            title: "French Toast",
+            description: "Thick-cut French toast loaded with chocolate chips and powdered sugar.",
+            image: "/food/french-toast.jpg",
             badge: "Sweet Treat"
         },
         {
-            title: "Crab Cake Platter",
-            description: "Fresh lump crab cakes, pan-seared golden brown, served with remoulade and a side salad.",
-            image: "https://images.unsplash.com/photo-1559742811-822873691df8?q=80&w=2000&auto=format&fit=crop",
+            title: "Breakfast Wrap",
+            description: "A hearty wrap packed with eggs, cheese and your choice of fillings.",
+            image: "/food/breakfast-wrap.jpg"
+        },
+        {
+            title: "Full Breakfast Platter",
+            description: "Eggs your way, crispy bacon, toast and home fries — the works.",
+            image: "/food/full-breakfast.jpg",
             badge: "Chef's Special"
         }
     ];
