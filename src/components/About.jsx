@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const About = () => {
     return (
-        <div className="bg-charcoal text-white relative overflow-hidden">
+        <div id="about" className="bg-charcoal text-white relative overflow-hidden">
             {/* Abstract Background Element */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-ocean/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
