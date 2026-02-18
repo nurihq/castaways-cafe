@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #000080;
+  --color-gold: #FFD700;
+  --font-serif: Merriweather, serif;
+  --font-sans: Inter, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
